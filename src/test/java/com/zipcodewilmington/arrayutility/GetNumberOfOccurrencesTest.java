@@ -11,10 +11,10 @@ public class GetNumberOfOccurrencesTest {
     @Test
     public void integerTest() {
         // Given
-        Integer valueToEvaluate = 7;
-        Integer expected = 3;
-        Integer[] inputArray = {1, 2, valueToEvaluate, 8, 4, 5, valueToEvaluate, 0, 9, 8, valueToEvaluate};
-        ArrayUtility<Integer> arrayUtility = new ArrayUtility<Integer>(inputArray);
+        Object valueToEvaluate = 7;
+        Object expected = 3;
+        Object[] inputArray = {1, 2, valueToEvaluate, 8, 4, 5, valueToEvaluate, 0, 9, 8, valueToEvaluate};
+        ArrayUtility<Object> arrayUtility = new ArrayUtility<Object>(inputArray);
 
         // When
         Integer actual = arrayUtility.getNumberOfOccurrences(valueToEvaluate);
@@ -26,10 +26,10 @@ public class GetNumberOfOccurrencesTest {
     @Test
     public void longTest() {
         // Given
-        Long valueToEvaluate = 7L;
+        Object valueToEvaluate = 7L;
         Integer expected = 4;
-        Long[] inputArray = {1L, 2L, valueToEvaluate, 8L, 4L, 5L, valueToEvaluate, 0L, 9L, 8L, valueToEvaluate, valueToEvaluate};
-        ArrayUtility<Long> arrayUtility = new ArrayUtility<Long>(inputArray);
+        Object[] inputArray = {1L, 2L, valueToEvaluate, 8L, 4L, 5L, valueToEvaluate, 0L, 9L, 8L, valueToEvaluate, valueToEvaluate};
+        ArrayUtility<Object> arrayUtility = new ArrayUtility<Object>(inputArray);
 
         // When
         Integer actual = arrayUtility.getNumberOfOccurrences(valueToEvaluate);
@@ -41,10 +41,10 @@ public class GetNumberOfOccurrencesTest {
     @Test
     public void stringTest() {
         // Given
-        String valueToEvaluate = "a";
+        Object valueToEvaluate = "a";
         Integer expected = 2;
-        String[] inputArray = {"1", "2", valueToEvaluate, "8", "4", "5", valueToEvaluate, "0", "9", "8"};
-        ArrayUtility<String> arrayUtility = new ArrayUtility<String>(inputArray);
+        Object[] inputArray = {"1", "2", valueToEvaluate, "8", "4", "5", valueToEvaluate, "0", "9", "8"};
+        ArrayUtility<Object> arrayUtility = new ArrayUtility<Object>(inputArray);
 
         // When
         Integer actual = arrayUtility.getNumberOfOccurrences(valueToEvaluate);

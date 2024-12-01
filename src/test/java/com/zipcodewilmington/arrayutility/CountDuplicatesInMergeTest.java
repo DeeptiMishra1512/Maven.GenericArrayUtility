@@ -48,7 +48,7 @@ public class CountDuplicatesInMergeTest {
         String[] inputArray = {"1", "2", valueToEvaluate, "8", "4", "5", valueToEvaluate, "0", "9", "8", valueToEvaluate};
         String[] arrayToMerge = {"1", "2", valueToEvaluate, "8", "4", "5", valueToEvaluate, "0", "9", "8", valueToEvaluate, valueToEvaluate};
 
-        ArrayUtility<String> arrayUtility = new ArrayUtility<String>(inputArray);
+        ArrayUtility arrayUtility = new ArrayUtility<String>(inputArray);
 
         // When
         Integer actual = arrayUtility.countDuplicatesInMerge(arrayToMerge, valueToEvaluate);
@@ -65,7 +65,7 @@ public class CountDuplicatesInMergeTest {
         Object[] inputArray = {"1", "2", valueToEvaluate, "8", "4", "5", valueToEvaluate, "0", "9", "8", valueToEvaluate};
         Object[] arrayToMerge = {"1", "2", valueToEvaluate, "8", "4", "5", valueToEvaluate, "0", "9", "8", valueToEvaluate, valueToEvaluate, valueToEvaluate};
 
-        ArrayUtility<Object> arrayUtility = new ArrayUtility<Object>(inputArray);
+        ArrayUtility arrayUtility = new ArrayUtility(inputArray);
 
         // When
         Integer actual = arrayUtility.countDuplicatesInMerge(arrayToMerge, valueToEvaluate);
